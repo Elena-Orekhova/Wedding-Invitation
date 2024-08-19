@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="images/favicon/favicon.ico" sizes="any" />
+  <link rel="icon" href="images/favicon/favicon.svg" type="image/svg+xml" color="green" />
+  <title>Wedding invitation</title>
+  <link rel="stylesheet" href="styles/locomotive-scroll.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <div class="opacity">
+    <header class="header background-image flex-wrapper">
+      <img class="header__image-flover" src="images/header-image.png" alt="Листья">
+      <h1 class="header__title-name-man">Александр</h1>
+      <h1 class="header__title-name">и</h1>
+      <h1 class="header__title-name-woman">Анастасия</h1>
+      <img class="header__image-separator" src="images/separator.png" alt="Листья">
+      <h2 class="header__title-info">Мы женимся!</h2>
+      <p class="header__date">26 | 07 | 24</p>
+      <button class="button-pointer">
+        <img class="pointer-image" src="images/pointer-image.png" alt="Стрелка далее">
+      </button>
+    </header>
+  </div>
+  <div class="opacity"></div>
+  <main class="main flex-wrapper">
+    <div data-scroll data-scroll-css-progress class="main__wrapper-info background-image">
+      <h2 class="main__title-info">Дорогие гости!</h2>
+      <p class="main__text-info">
+        В нашей жизни предстоят счастливые перемены,
+        И мы хотим, чтобы в этот день рядом с нами
+        были самые близкие и дорогие для нас люди.
+        Будем рады разделить с вами чудестный праздник
+        - день нашей свадьбы!
+      </p>
+      <div class="main__wrapper-calendar">
+        <h2 class="main__title-calendar">Июль 2024</h2>
+        <table class="main__table-calendar">
+          <tr class="main__table-calendar-days-of-the-week">
+            <th>Пн</th>
+            <th>Вт</th>
+            <th>Ср</th>
+            <th>Чт</th>
+            <th>Пт</th>
+            <th>Сб</th>
+            <th>Вс</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td class="main__table_calendar-wedding-day">26</td>
+            <td>27</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div data-scroll data-scroll-css-progress class="main__wrapper-timing">
+      <h2 data-scroll data-scroll-css-progress class="main__title-timing">Тайминг</h2>
+      <ul class="main__list-timing">
+        <li data-scroll data-scroll-css-progress class="main__item-timing">
+          <p class="item-timing-time">13.00</p>
+          <img class="item-timing-image" src="images/rings.png" alt="Кольца">
+          <div>
+            <h3 class="main__item-title">Торжественная Регистрация</h3>
+            <p class="main__item-text">
+              Приготовьте платочки для трогательного момента
+            </p>
+          </div>
+        </li>
+        <li data-scroll data-scroll-css-progress class="main__item-timing">
+          <h3 class="main__item-title">Адрес:</h3>
+          <p class="main__item-text">
+            Курская обл., пос. им. Маршала Жукова, 6-ой Квартал, 5а
+          </p>
+          <button class="main__button-map reg">
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                document.querySelector('.reg').addEventListener('click', function () {
+                  let url = "https://yandex.ru/maps/10705/kursk-oblast/house/6_y_kvartal_5a/Z08YdQVpSkcCQFtrfXtwcXRrZw==/?ll=36.329025%2C51.710942&z=17.73";
+                  window.open(url, '_blank');
+                });
+              });
+            </script>
+            <p>Посмотреть на карте</p>
+            <svg class="main__button-map-arrow-right" viewBox="0 0 100 85">
+              <polygon
+                points="58.263,0.056 100,41.85 58.263,83.641 30.662,83.641 62.438,51.866 0,51.866 0,31.611 62.213,31.611 30.605,0 58.263,0.056" />
+            </svg>
+          </button>
+        </li>
+        <hr class="separator">
+        <li class="main__item-timing">
+          <p class="item-timing-time">14.30</p>
+          <img class="item-timing-image" src="images/camera.png" alt="Фотоаппарат">
+          <div>
+            <h3 class="main__item-title">Фотосессия</h3>
+            <p class="main__item-text">
+              Собираясь на фотосессию, возьмите с собой улыбки и хорошее настроение
+            </p>
+          </div>
+        </li>
+        <hr class="separator">
+        <li class="main__item-timing">
+          <p class="item-timing-time">16.30</p>
+          <img class="item-timing-image item-timing-image-watch" src="images/watch.png" alt="Cбор">
+          <div>
+            <h3 class="main__item-title">Сбор гостей</h3>
+            <p class="main__item-text">
+              Пора встретиться для чего-то приятного
+            </p>
+          </div>
+        </li>
+        <li class="main__item-timing">
+          <h3 class="main__item-title">Адрес:</h3>
+          <p class="main__item-text">г.Курск, ул. Энгельса, 171Б
+            Кафе "Медиа", 1 этаж</p>
+          <button class="main__button-map rest">
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                document.querySelector('.rest').addEventListener('click', function () {
+                  let url = "https://yandex.ru/maps/org/media/1342836699/?ll=36.154252%2C51.694900&z=17.47";
+                  window.open(url, '_blank');
+                });
+              });
+            </script>
+            <p>Посмотреть на карте</p>
+            <svg class="main__button-map-arrow-right" viewBox="0 0 100 85">
+              <polygon
+                points="58.263,0.056 100,41.85 58.263,83.641 30.662,83.641 62.438,51.866 0,51.866 0,31.611 62.213,31.611 30.605,0 58.263,0.056" />
+            </svg>
+          </button>
+        </li>
+        <li class="main__item-timing">
+          <p class="item-timing-time">17.00</p>
+          <img class="item-timing-image" src="images/dinner.png" alt="Ужин">
+          <div>
+            <h3 class="main__item-title">Праздничный банкет</h3>
+            <p class="main__item-text">
+              Время танцев, вкусной еды, теплых пожеланий и развлечений
+            </p>
+          </div>
+        </li>
+
+        <li class="main__item-timing">
+          <p class="item-timing-time">23.00</p>
+          <img class="item-timing-image" src="images/firework.png" alt="Салют">
+          <div>
+            <h3 class="main__item-title">Окончание вечера</h3>
+            <p class="main__item-text">
+              Надеемся, что время пролетит для вас незаметно и вы насладитесь вечером
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div data-scroll data-scroll-css-progress class="main__details background-image">
+      <h2>Детали</h2>
+      <p class="main__details-text">
+        Мы очень ждем и с удовольствием готовимся к нашему незабываемому дню!
+        Поддержите нас вашими улыбками и объятиями,
+        а также красивыми нарядами в палитре торжества
+      </p>
+      <hr class="separator">
+      <p>Для нашей свадьбы мы выбрали стиль GREENERY,
+        который включает все оттенки зелени, золота, а также бежевые и черные цвета
+      </p>
+      <ul class="main__details-list">
+        <ul class="main__list-color">
+          <li class="main__item-color item-color-beige">
+          </li>
+          <li class="main__item-color item-color-gold">
+          </li>
+          <li class="main__item-color item-color-green">
+          </li>
+          <li class="main__item-color item-color-black">
+          </li>
+        </ul>
+        <li>
+          <div class="main__galery-dress">
+            <h3 class="main__galery-title grid-area-header">Девушки</h3>
+            <!-- Коллекция изображений -->
+            <img src="images/dress/dress4.jpg" alt="Девушка в бежевом платье" class="grid-area-one gallery-image-girl">
+            <img src="images/dress/dress.jpg" alt="Девушка в черном платье" class="grid-area-two gallery-image-girl">
+            <img src="images/dress/dress6.jpg" alt="Девушка в зеленом платье"
+              class="grid-area-three gallery-image-girl">
+            <img src="images/dress/dress2.jpg" alt="Девушка в золотом платье"
+              class="grid-area-foure gallery-image-girl">
+            <!-- <img src="images/dress/dress5.jpg" alt="Девушка в зеленом платье"> -->
+            <!-- <img src="images/dress/dress3.jpg" alt="Девушка в черном платье"> -->
+            <!-- <img src="images/dress/dress7.jpg" alt="Девушка в бежевом платье"> -->
+            <!-- <img src="images/dress/dress8.jpg" alt="Девушка в зеленом платье"> -->
+            <button class="gallery-swipe-girl grid-area-swipe" onclick="changeImagesGirl()">
+              <svg class="gallery-swipe-rotate" width="64" height="64" viewBox="0 0 64 64" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g transform="rotate(180 32 32)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.5429 32.4571C15.1524 32.0666 15.1524 31.4334 15.5429 31.0429L21.9069 24.6789C22.2974 24.2884 22.9305 24.2884 23.3211 24.6789C23.7116 25.0694 23.7116 25.7026 23.3211 26.0931L18.6642 30.75H47.75C48.3023 30.75 48.75 31.1977 48.75 31.75C48.75 32.3023 48.3023 32.75 47.75 32.75H18.6642L23.3211 37.4068C23.7116 37.7974 23.7116 38.4305 23.3211 38.8211C22.9305 39.2116 22.2974 39.2116 21.9069 38.8211L15.5429 32.4571Z"
+                    fill="black" />
+                </g>
+              </svg>
+              <p>еще</p>
+            </button>
+          </div>
+        </li>
+        <ul class="main__list-color">
+          <li class="main__item-color item-color-white">
+          </li>
+          <li class="main__item-color item-color-grey">
+          </li>
+          <li class="main__item-color item-color-black">
+          </li>
+        </ul>
+        <li>
+          <div class="main__galery-dress">
+            <h3 class="main__galery-title main__galery-title">Мужчины</h3>
+            <!-- Коллекция изображений -->
+            <img src="images/man/man.jpg" alt="Мужчина в белой рубашке и черных брюках"
+              class="grid-area-one gallery-image-man">
+            <img src="images/man/man2.jpg" alt="Мужчина в белой рубашке и серых брюках"
+              class="grid-area-two gallery-image-man">
+            <img src="images/man/man3.jpg" alt="Мужчина в белой рубашке и черных брюках"
+              class="grid-area-three gallery-image-man">
+            <img src="images/man/man4.jpg" alt="Мужчина в черной рубашке и черных брюках"
+              class="grid-area-foure gallery-image-man">
+            <!-- <img src="images/man/man5.jpg" alt="Мужчина в белой рубашке и черных брюках"> -->
+            <!-- <img src="images/man/man6.jpg" alt="Мужчина в белой рубашке и белых брюках"> -->
+            <!-- <img src="images/man/man7.jpg" alt="Мужчина в белой рубашке и серых брюках"> -->
+            <!-- <img src="images/man/man8.jpg" alt="Мужчина в черной рубашке и черных брюках"> -->
+
+            <button class="gallery-swipe-man grid-area-swipe" onclick="changeImagesMan()">
+              <svg class="gallery-swipe-rotate" width="64" height="64" viewBox="0 0 64 64" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g transform="rotate(180 32 32)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.5429 32.4571C15.1524 32.0666 15.1524 31.4334 15.5429 31.0429L21.9069 24.6789C22.2974 24.2884 22.9305 24.2884 23.3211 24.6789C23.7116 25.0694 23.7116 25.7026 23.3211 26.0931L18.6642 30.75H47.75C48.3023 30.75 48.75 31.1977 48.75 31.75C48.75 32.3023 48.3023 32.75 47.75 32.75H18.6642L23.3211 37.4068C23.7116 37.7974 23.7116 38.4305 23.3211 38.8211C22.9305 39.2116 22.2974 39.2116 21.9069 38.8211L15.5429 32.4571Z"
+                    fill="black" />
+                </g>
+              </svg>
+              <p>еще</p>
+            </button>
+          </div>
+        </li>
+        <script src="./scripts/gallery.js"></script>
+      </ul>
+      <p class="main__details-text">
+        Мы просим вас не дарить нам цветы, так как после праздничного торжества мы сразу же
+        уезжаем в долгожданное путешествие и не успеем насладиться красотой этих букетов!
+        Если вы хотите выразить вашу любовь и радость, то замените цветы на бутылочку вина,
+        виски или любого другого напитка для нашего семейного бара с запиской о событии,
+        к которому вы хотели бы приурочить ее открытие, мы обещаем, бутылочка не завянет!
+      </p>
+    </div>
+    <div data-scroll data-scroll-css-progress class="main__form background-image">
+      <h2>Анкета</h2>
+      <p class="main__form-text">
+        Ответьте пожалуйста на несколько вопросов,
+        которые мы для вас подготовили
+      </p>
+      <form
+        action="https://docs.google.com/forms/d/e/1FAIpQLSeJg7ojrTYWtGQ_fKJqPpy4OU4RfJMCzGFd1_yt8abReszNBA/formResponse"
+        class="form" method="POST" target="hidden_iframe" onsubmit="submitted=true" id="mainForm">
+        <fieldset class="main__form-name fieldset">
+          <h3 class="main__form-title">Напишите пожалуйста ваши Фио (полностью):</h3>
+          <label for="name"></label>
+          <input type="text" id="name" name="entry.378612920" class="main__form_input-text" maxlength="100"
+            pattern="[А-Яа-яЁё\s]+" title="Разрешены только буквы кириллицы и пробелы.
+            Например: СИДОРОВ ПЁТР ИВАНОВИЧ" required>
+        </fieldset>
+        <fieldset class="fieldset">
+          <h3 class="main__form-title">Сможете ли присутствовать на регистрации?</h3>
+          <div class="main__form-iten">
+            <input type="radio" id="affirmatively" name="entry.322331028" value="Да">
+            <label for="affirmatively" class="custom-radio">
+              Да
+            </label>
+          </div>
+          <div class="main__form-iten">
+            <input type="radio" id="negative" name="entry.322331028" value="Не смогу прийти">
+            <label for="negative" class="custom-radio">
+              Не смогу прийти
+            </label>
+          </div>
+          <div>
+            <input type="radio" id="doubts" name="entry.322331028" value="Сообщу позже">
+            <label for="doubts" class="custom-radio">
+              Сообщу позже
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <h3 class="main__form-title">Будете ли присутствовать на банкете?</h3>
+          <div class="main__form-iten">
+            <input type="radio" id="agreement" name="entry.916906661" value="С удовольствием приду">
+            <label for="agreement" class="custom-radio">
+              С удовольствием приду
+            </label>
+          </div>
+          <div class="main__form-iten">
+            <input type="radio" id="refusal" name="entry.916906661" value="Не смогу присутствовать">
+            <label for="refusal" class="custom-radio">
+              Не смогу присутствовать
+            </label>
+          </div>
+          <div>
+            <input type="radio" id="later" name="entry.916906661" value="Сообщу позже">
+            <label for="later" class="custom-radio">
+              Сообщу позже
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <h3 class="main__form-title">С кем вы планируете посетить торжество?</h3>
+          <div class="main__form-iten">
+            <input type="radio" id="one" name="entry.2141895587" value="Буду один">
+            <label for="one" class="custom-radio">
+              Буду один
+            </label>
+          </div>
+          <div class="main__form-iten">
+            <input type="radio" id="pair" name="entry.2141895587" value="Буду со своей второй половинкой">
+            <label for="pair" class="custom-radio">
+              Буду со своей второй половинкой
+            </label>
+          </div>
+          <div class="main__form-iten">
+            <input type="radio" id="friend" name="entry.2141895587" value="Буду с другом / подругой">
+            <label for="friend" class="custom-radio">
+              Буду с другом / подругой
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <h3 class="main__form-title">Будут ли с вами дети?</h3>
+          <div class="main__form-iten">
+            <input type="radio" id="yes" name="entry.1201613950" value="Да">
+            <label for="yes" class="custom-radio">
+              Да
+            </label>
+          </div>
+          <div class="main__form-iten">
+            <input type="radio" id="not" name="entry.1201613950" value="Нет">
+            <label for="not" class="custom-radio">
+              Нет
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <h3 class="main__form-title">Будете ли вы на личном транспорте?</h3>
+          <div class="main__form-iten">
+            <input type="radio" id="bycar" name="entry.1276099024" value="Да, я буду на машине">
+            <label for="bycar" class="custom-radio">
+              Да, я буду на машине
+            </label>
+          </div>
+          <div class="main__form-iten">
+            <input type="radio" id="withoutcar" name="entry.1276099024" value="Нет, я буду без транспорта">
+            <label for="withoutcar" class="custom-radio">
+              Нет, я буду без транспорта
+            </label>
+          </div>
+        </fieldset>
+        <hr class="separator">
+        <fieldset class="fieldset">
+          <h3 class="main__form-title">Что предпочитаете из напитков?</h3>
+          <div class="main__form-iten">
+            <input type="checkbox" id="red-wine" name="entry.1834142447" value="Красное вино">
+            <label for="red-wine" class="custom-checkbox">
+              Красное вино
+            </label>
+          </div>
+          <div class="main__form-iten">
+            <input type="checkbox" id="white-wine" name="entry.1834142447" value="Белое вино">
+            <label for="white-wine" class="custom-checkbox">
+              Белое вино
+            </label>
+          </div>
+          <div class="main__form-iten">
+            <input type="checkbox" id="bubbly" name="entry.1834142447" value="Шампанское">
+            <label for="bubbly" class="custom-checkbox">
+              Шампанское
+            </label>
+          </div>
+          <div class="main__form-iten">
+            <input type="checkbox" id="whiskey" name="entry.1834142447" value="Виски">
+            <label for="whiskey" class="custom-checkbox">
+              Виски
+            </label>
+          </div>
+          <div class="main__form-iten">
+            <input type="checkbox" id="vodka" name="entry.1834142447" value="Водка">
+            <label for="vodka" class="custom-checkbox">
+              Водка
+            </label>
+          </div>
+          <div class="main__form-iten">
+            <input type="checkbox" id="negation" name="entry.1834142447" value="Не пью алкоголь">
+            <label for="negation" class="custom-checkbox">
+              Не пью алкоголь
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <h3 class="main__form-title">Ваши предпочтения в еде</h3>
+          <div class="main__form-iten">
+            <input type="checkbox" id="meat" name="entry.1396938084" value="Мясо">
+            <label for="meat" class="custom-checkbox">
+              Мясо
+            </label>
+          </div>
+          <div class="main__form-iten">
+            <input type="checkbox" id="fish" name="entry.1396938084" value="Рыба">
+            <label for="fish" class="custom-checkbox">
+              Рыба
+            </label>
+          </div>
+          <div class="main__form-iten">
+            <input type="checkbox" id="vegetables" name="entry.1396938084" value="Овощи">
+            <label for="vegetables" class="custom-checkbox">
+              Овощи
+            </label>
+          </div>
+        </fieldset>
+        <button type="submit" value="Отправить" class="main__button-send" id="send">Отправить</button>
+      </form>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+      <script type="text/javascript">
+        let submitted = false;
+      </script>
+      <div class="success-message" id="successMessage">Ваши ответы были отправлены</div>
+      <button class="button-pointer">
+        <img class="pointer-image" src="images/pointer-image.png" alt="Стрелка далее">
+      </button>
+    </div>
+    <script>
+      document.getElementById('mainForm').addEventListener('submit', function (event) {
+        document.getElementById('successMessage').style.display = 'block';
+        document.getElementById('send').style.display = 'none';
+      });
+    </script>
+    <div data-scroll data-scroll-css-progress class="main__wrapper-tablet background-image">
+      <h2 class="main__title-tablet">План рассадки</h2>
+      <p class="main__form-tablet">
+        Когда мы получим все ответы о присутствии, будет сформирован план рассадки.
+      </p>
+      <p class="main__form-tablet">
+        Пожалуйста, не забудьте ознакомиться с ним накануне свадьбы, нажав на кнопку ниже
+      </p>
+      <a class="button-link" href="table.html">
+        <button type="button" class="main__button-tablet">
+          Смотреть план рассадки...
+        </button>
+      </a>
+    </div>
+  </main>
+  <footer data-scroll data-scroll-css-progress class="footer background-image flex-wrapper">
+    <div>
+      <h2>Контакты</h2>
+      <p class="footer__text">
+        По всем вопросам обращайтесь к нашему свадебному координатору
+        Плохих Виктории
+      </p>
+      <a href="tel:+79192708716" class="footer__link-connection">+7 (919) 270 87 16</a>
+      <p class="footer__text">а также добавляемся в группу телеграм</p>
+      <a href="https://t.me/+amFHVd7UiitjNTYy" target="_blank" class="footer__link-connection">Telegram</a>
+    </div>
+    <h2 class="footer__title">Ждем вас через...</h2>
+    <script src="./scripts/timer.js"></script>
+    <div class="footer__timer-day">
+      <p id="days"></p>
+      <p id="hours"></p>
+      <p id="minutes"></p>
+      <p id="seconds"></p>
+      <p class="footer__timer-name">дней</p>
+      <p class="footer__timer-name">часов</p>
+      <p class="footer__timer-name">минут</p>
+      <p class="footer__timer-name">секунд</p>
+    </div>
+    <p class="countdown"></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+  <script>
+    (function () {
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+/* Импорт шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+body {
+  font-size: 21px;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 600px;
+  min-width: 300px;
+  text-align: center;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 50px;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  text-transform: uppercase;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.separator {
+  align-items: center;
+  color: black;
+  size: 4px;
+  width: 300px;
+  opacity: 0.7;
+}
+
+.button-pointer {
+  background: none;
+  border: none;
+  height: 40px;
+  width: 50px;
+  animation: moveUpDown 1.5s ease-in-out infinite;
+  margin: 10px 0;
+}
+
+.pointer-image {
+  height: 100%;
+  width: 100%;
+}
+
+.main_table {
+  margin: 40px 0;
+  position: relative;
+  opacity: calc(var(--progress)*2 + 0) ;
+}
+
+.main__header_table-img {
+  opacity: 0.7;
+}
+
+.green {
+  background: linear-gradient(
+    rgb(255, 255, 255) 15%, 
+    rgba(12, 52, 21, 0.4) 35%, 
+    rgb(255, 255, 255) 99%);
+}
+
+.brown {
+  background: linear-gradient(
+    rgb(255, 255, 255) 15%, 
+    rgba(63, 31, 31, 0.4) 35%, 
+    rgb(255, 255, 255) 99%);
+}
+
+.header {
+  padding: 70px 25px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.header_img {
+  width: 220px;
+}
+
+h1, h2 {
+  font-family: "Comforter", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+.main__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-direction: column;
+}
+
+
+.footer__image {
+  width: 80px;
+  display: block;
+  opacity: 0.9;
+  display: flex;
+  margin: 0 auto 15px;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
